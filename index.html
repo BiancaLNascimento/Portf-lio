@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">PORTFÓLIO</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#experience">Habilidades</a></li>
+        <li><a href="#contact">Contatos</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">PORTFÓLIO</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Habilidades</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contatos</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/biancalima.jpg" alt="Bianca Lima foto" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Olá, Eu sou a</p>
+      <h1 class="title">Bianca Lima</h1>
+      <p class="section__text__p2">Desenvolvedora Web</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/currículo.pdf')">
+          Currículo
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contatos
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/bianca-lima-692735283/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/BiancaLNascimento'"/>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <h1 class="title">Sobre Mim</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Habilidades</h3>
+            <p>Comunicação <br />Adaptabilidade e flexibilidade <br />Pensamento crítico e resolução de problemas</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Educação</h3>
+            <p>IOS - Programação Web (300h)<br>Fundação Bradesco - Pacote Office Avançado (em andamento) </p>
+          </div>
+        </div>
+        <div class=" ">
+          <p>
+            Olá sou a Bianca, estudante de Desenvolvimento Web, apaixonada por tecnologia e criação de soluções digitais
+            que fazem
+            a diferença. Estou em constante aprendizado, explorando linguagens, frameworks e ferramentas que tornam a
+            web mais
+            interativa, acessível e funcional.
+            <br>
+            Meu objetivo é unir criatividade e técnica para desenvolver projetos que transformem ideias em realidade,
+            com foco em design intuitivo, performance e inclusão digital.
+            Aqui você encontrará alguns dos trabalhos que refletem minha jornada e o que posso oferecer como
+            desenvolvedora.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <h1 class="title">Habilidades</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Desenvolvimento</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Intermediário</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediário</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basico</p>
+              </div>
+
+              <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <section id="contact">
+    <h1 class="title">Meus contatos</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:examplemail@gmail.com">biancaa_nascimento@outlook.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/bianca-lima-692735283/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Habilidades</a></li>
+          <li><a href="#contact">Contatos</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Bianca Lima. Todos os direitos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
